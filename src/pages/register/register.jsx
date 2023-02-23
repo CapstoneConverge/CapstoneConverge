@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from "react-router-dom"
 import "./register.scss";
 
 const Register = () => {
@@ -8,7 +10,9 @@ const Register = () => {
                     <h1>Converge</h1>
                     <p>Welcome to Converge! A music social media app! Changing interactions one song at a time!</p>
                     <span>Have an account?</span> 
+                    <Link to="/login">
                     <button>Login</button>
+                    </Link>
                 </div>
                 <div className="right">
                     <h1>Register</h1>

@@ -14,7 +14,8 @@ justify-content: center;
 
         .left{
             flex: 1;
-            background: linear-gradient(rgba(105, 156, 188, 0.5), rgba(73, 21, 179, 0.5)), url("https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background: linear-gradient(rgba(105, 156, 188, 0.5), rgba(73, 21, 179, 0.5)), 
+            url("https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600");
             background-size: cover;
             padding: 50px;
             display: flex;
