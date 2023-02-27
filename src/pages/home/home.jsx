@@ -1,9 +1,12 @@
 import React from 'react';
-import "./home.scss"
+import Posts from "../../components/posts/Posts";
+import "./home.scss";
 
 const Home = () => {
     return (
-        <div className="home">Home</div>
+        <div className="home">
+           <Posts/> 
+        </div>
     )
 }
 

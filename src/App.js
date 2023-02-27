@@ -8,23 +8,27 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-import LeftBar from "./components/leftBar/LeftBar";
+// import LeftBar from "./components/leftBar/LeftBar";
 import RightBar from "./components/rightBar/RightBar";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
+import { useContext } from 'react';
+import { AuthContext } from './context/authContext.js';
 
 //Authentication
 function App() {
 
-  const currentUser = true;
+  const {currentUser} = useContext(AuthContext);
 
   const Layout = ()=>{
     return(
       <div>
        <Navbar/>
        <div style={{ display: "flex"}}> 
-        <LeftBar/>
+        {/* <LeftBar/> */}
+        <div style={{ flex: 6 }}>
         <Outlet/>
+        </div>
         <RightBar/>
        </div>
       </div>
@@ -75,6 +79,7 @@ function App() {
        <RouterProvider router={router} /> 
     </div>
   )
-}
+};
+
 
 export default App;
