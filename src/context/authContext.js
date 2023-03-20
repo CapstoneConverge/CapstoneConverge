@@ -6,6 +6,19 @@ export const AuthContextProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState (
         JSON.parse(localStorage.getItem("user")) || null 
     );
+    const [dataBase,] = useState (
+        {
+            user:
+            {username: "Caston Boyd",
+            password: "1234",}
+            
+
+
+
+        }
+    )
+
+    
 
     const login = () => {
         //to do 

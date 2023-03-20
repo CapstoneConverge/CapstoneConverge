@@ -1,3 +1,4 @@
+import { Button } from 'bootstrap';
 import React from 'react';
 import Post from "../../components/post/Post"
 import "./posts.scss";
@@ -6,7 +7,7 @@ import "./posts.scss";
 const Posts = () => {
     //temp
     const posts = [
-        {
+        {   
             id:1,
             name: "Cris Pico",
             userId: 1,
@@ -21,9 +22,10 @@ const Posts = () => {
      
 
     return <div className="posts">
-            {posts.map(post=>(
-                <Post post={post} key ={post.id}/> 
-            ))}
+           
+              <Post post={posts[0]} key ={posts[0].id}/> 
+              <Post style={{visibility: "hidden"}} post={posts[1]} key ={posts[1].id}/> 
+            
         </div>
 
 }

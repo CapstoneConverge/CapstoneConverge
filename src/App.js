@@ -16,7 +16,7 @@ import { useContext } from 'react';
 import { AuthContext } from './context/authContext.js';
 
 //Authentication
-function App() {
+function App() { 
 
   const {currentUser} = useContext(AuthContext);
 
